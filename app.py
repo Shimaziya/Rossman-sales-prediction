@@ -15,7 +15,7 @@ st.set_page_config(
 # Load Dataset
 # -----------------------------
 train = pd.read_csv("train_small.csv")
-store = pd.read_csv("dataset/store.csv")
+store = pd.read_csv("store.csv")
 
 # Merge datasets
 train = train.merge(store, on="Store", how="left")
